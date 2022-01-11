@@ -1,0 +1,36 @@
+.Typography__root {
+  opacity: 0.7;
+  margin: 0;
+  padding: 0.7rem 0;
+}
+.Typography--primary {
+  color: var(--color-text-primary);
+}
+.Typography--h1 {
+  font-size: 2.75rem;
+}
+.Typography--h2 {
+  font-size: 2.25rem;
+}
+
+.Typography--h3 {
+  font-size: 1.75rem;
+}
+.Typography--h4 {
+  font-size: 1.5rem;
+}
+
+.Typography--h5 {
+  font-size: 1.15rem;
+}
+
+.Typography--h6 {
+  font-size: 1rem;
+}
+.Typography--body1 {
+  font-size: 0.9rem;
+}
+.Typography--body2 {
+  font-size: 0.95rem;
+  font-weight: bold;
+}
