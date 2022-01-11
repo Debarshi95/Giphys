@@ -1,0 +1,17 @@
+.TextInput__root {
+  outline: none;
+  width: 100%;
+  padding: 0.65rem 1rem;
+  margin-bottom: 0.65rem;
+  font-family: inherit;
+  border-radius: 0.1rem;
+  border: 0.125rem solid var(--color-background-secondary);
+  font-size: 0.9rem;
+  background-color: var(--color-background-secondary);
+}
+
+@media screen and (min-width: 600px) {
+  .TextInput__root {
+    font-size: 1rem;
+  }
+}
