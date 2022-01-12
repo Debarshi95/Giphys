@@ -1,0 +1,12 @@
+.Modal__root {
+  width: 100%;
+  overflow: hidden scroll;
+  min-height: 100vh;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  content: '';
+  top: 0;
+  padding: 1rem;
+  left: 0;
+}
