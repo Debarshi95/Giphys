@@ -1,0 +1,40 @@
+.PostBox__root {
+  width: 38rem;
+  margin: 0 auto;
+  background-color: var(--color-text-secondary);
+  border-radius: 0.15rem;
+  padding: 1rem;
+}
+.PostBox__inputContainer > div {
+  display: flex;
+}
+
+.PostBox__post {
+  min-height: 3rem;
+  max-height: 18rem;
+  margin: 0.5rem 0 1rem 0;
+}
+.PostBox__post > img {
+  display: block;
+  height: 18rem;
+}
+.PostBox__colorCardContainer {
+  display: flex;
+}
+.PostBox__filterContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 0.5rem;
+  row-gap: 0.5rem;
+  margin: 0.75rem 0;
+}
+
+.PostBox__actionContainer {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+.PostBox__input {
+  background-color: transparent;
+  border: none;
+}

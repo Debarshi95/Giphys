@@ -1,0 +1,10 @@
+.Avatar__root {
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+}
+.Avatar__root > img {
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+}
