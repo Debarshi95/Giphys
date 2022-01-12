@@ -1,0 +1,13 @@
+.FilterChip__root {
+  background-color: var(--color-background-primary);
+  padding: 0 1.25rem;
+  border-radius: 5rem;
+  position: relative;
+  cursor: pointer;
+}
+.FilterChip__root:hover {
+  background-color: var(--color-filter-hover);
+}
+.FilterChip__actions {
+  display: flex;
+}

@@ -1,0 +1,21 @@
+.PopupCard__root {
+  background-color: var(--color-text-secondary);
+  max-height: 20rem;
+  overflow: hidden scroll;
+  position: absolute;
+  width: 20rem;
+  left: 0;
+  top: 3rem;
+  padding: 0.75rem;
+  border: 0.15rem solid var(--color-background-primary);
+}
+
+.PopupCard__root > input[type='text'] {
+  position: sticky;
+  top: 0;
+  background-color: var(--color-text-secondary);
+}
+.PopupCard__imageContainer {
+  height: 14rem;
+  width: 100%;
+}
