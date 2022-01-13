@@ -19,4 +19,10 @@ const Avatar = ({ url, width, height }) => {
   );
 };
 
+Avatar.defaultProps = {
+  url: '',
+  width: '4rem',
+  height: '4rem',
+};
+
 export default Avatar;

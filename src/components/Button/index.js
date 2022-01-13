@@ -1,4 +1,3 @@
-/* eslint-disable react/jsx-props-no-spreading */
 /* eslint-disable react/button-has-type */
 import React from 'react';
 import './index.css';
@@ -9,6 +8,12 @@ const Button = ({ type, variant, children, ...rest }) => {
       {children}
     </button>
   );
+};
+
+Button.defaultProps = {
+  type: 'button',
+  variant: 'contained',
+  children: 'Button',
 };
 
 export default Button;
