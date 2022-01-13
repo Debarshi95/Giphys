@@ -3,7 +3,6 @@ import Typography from '../Typography';
 import './index.css';
 
 const FilterChip = ({ children, icon, text, handlePopup }) => {
-  console.log('FILTERCHIP re-rendered');
   return (
     <div
       className="FilterChip__root"
