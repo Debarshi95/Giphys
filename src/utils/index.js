@@ -14,3 +14,16 @@ export const persistInStorage = (item, key = '') => {
 export const generateNum = () => {
   return Math.random().toString(36).slice(2);
 };
+
+export const debounce = (cb, delay) => {
+  let timer;
+  return function fn(...args) {
+    const ctx = this;
+    if (timer) {
+      clearTimeout(timer);
+    }
+    timer = setTimeout(() => {
+      cb.apply(ctx, [...args]);
+    }, delay);
+  };
+};

@@ -1,5 +1,6 @@
-import React, { useEffect, useState } from 'react';
+import React, { useCallback, useEffect, useState } from 'react';
 import { getSearch, getTrending } from '../../services/giphyApi';
+import { debounce } from '../../utils';
 import CardContent from '../CardContent';
 import CardImage from '../CardImage';
 import TextInput from '../TextInput';
@@ -24,12 +25,16 @@ const PopupCard = ({ handleSelectedItem }) => {
       // No OP
     }
   };
+
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  const debouncedHandleSearch = useCallback(debounce(handleSearch, 500), []);
+
   return (
     <div className="PopupCard__root">
       <TextInput
         type="text"
         placeholder="Search for a gif"
-        onChange={handleSearch}
+        onChange={debouncedHandleSearch}
         onClick={(e) => {
           e.stopPropagation();
         }}
