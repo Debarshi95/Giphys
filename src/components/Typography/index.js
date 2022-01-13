@@ -24,4 +24,9 @@ const Typography = ({ children, component, variant, ...props }) => {
   );
 };
 
+Typography.defaultProps = {
+  component: 'h2',
+  variant: 'h2',
+  children: '',
+};
 export default Typography;

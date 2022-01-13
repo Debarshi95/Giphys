@@ -26,4 +26,8 @@ const TextInput = forwardRef(({ type, name, onChange, className, ...props }, ref
   );
 });
 
+TextInput.defaultProps = {
+  type: 'text',
+  name: '',
+};
 export default TextInput;
