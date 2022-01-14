@@ -2,6 +2,7 @@
   min-height: calc(100vh - 8rem);
   width: 100%;
   margin: 0 auto;
+  position: relative;
 }
 .App__header {
   display: flex;

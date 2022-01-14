@@ -1,12 +1,16 @@
 .Modal__root {
   width: 100%;
-  overflow: hidden scroll;
-  min-height: 100vh;
-  position: fixed;
+  min-height: 100%;
   background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
   z-index: 999;
   content: '';
   top: 0;
   padding: 1rem;
-  left: 0;
+  /* left: 0; */
+  overflow-y: auto;
 }
+
+/* .Modal__root > div {
+  position: absolute;
+} */
